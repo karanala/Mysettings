@@ -1,15 +1,31 @@
 {
     "manifestVersion": "v3",
-    "name": "SampleApp",
+    "name": "mysettings",
     "interfaces": [
         {
             "type": "vehicle-signal-interface",
             "config": {
-                "src": "https://github.com/COVESA/vehicle_signal_specification/releases/download/v3.0/vss_rel_3.0.json",
+                "src": "./app/vspec.json",
                 "datapoints": {
                     "required": [
                         {
-                            "path": "Vehicle.Speed",
+                            "path": "Vehicle.Cabin.Door.Row1.Left.IsOpen",
+                            "access": "write"
+                        },
+                        {
+                            "path": "Vehicle.Cabin.Seat.Row1.Pos1.Height",
+                            "access": "write"
+                        },
+                        {
+                            "path": "Vehicle.Cabin.HVAC.Station.Row1.Left.Temperature",
+                            "access": "read"
+                        },
+                        {
+                            "path": "Vehicle.Body.Lights.IsHighBeamOn",
+                            "access": "read"
+                        },
+                        {
+                            "path": "Vehicle.Cabin.Seat.Row1.Pos1.Position",
                             "access": "read"
                         }
                     ]
