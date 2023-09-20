@@ -68,7 +68,7 @@ const plugin = ({ widgets, simulator, vehicle }) => {
       "Enable-MySettings": {
         German: "Meine Einstellungen aktivieren:",
         Chinese: "开启 MySettings:",
-        English: "Enable MySettings:",
+        English: "testing MySettings:",
         Spanish: "Habilitar mi configuración",
       },
       "Alter-your-Screen": {
